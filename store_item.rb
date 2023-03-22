@@ -12,5 +12,17 @@ bread = {:name => "Bread", :price => 4.00, :size => "large"}
 p "The cost of one #{pineapple[:size]} #{pineapple[:name]} is $#{pineapple[:price]}."
 
 
+class Store_items
+  def initialize(input_name, input_price, input_size)
+    @name = input_name
+    @price = input_price
+    @size = input_size
+  end
+end
+
+store_item1 = Store_items.new("Apple", 2.25, "large")
+store_item2 = Store_items.new("Avocado", 4.50, "small")
 
 
+p store_item1
+p store_item2
