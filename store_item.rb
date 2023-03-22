@@ -12,35 +12,61 @@ bread = {:name => "Bread", :price => 4.00, :size => "large"}
 p "The cost of one #{pineapple[:size]} #{pineapple[:name]} is $#{pineapple[:price]}."
 
 
+# class StoreItem
+#   def initialize(input_name, input_price, input_size)
+#     @name = input_name
+#     @price = input_price
+#     @size = input_size
+#   end
+
+#   def name
+#     @name
+#   end
+
+#   def price
+#     @price
+#   end
+
+#   def size
+#     @size
+#   end
+
+#   def price=(new_price)
+#     @price = new_price
+#   end
+
+#   def size=(new_size)
+#     @size = new_size
+#   end
+
+#   def name=(new_name)
+#     @name = new_name
+#   end
+# end
+
+# store_item1 = StoreItem.new("Apple", 2.25, "large")
+# store_item2 = StoreItem.new("Avocado", 4.50, "small")
+
+# puts store_item1.price
+# puts store_item1.name
+# puts store_item1.size
+
+# puts store_item2.price = 5.5
+# puts store_item2.name = "Soup"
+
 class StoreItem
+  attr_reader :name
+  attr_reader :price
+  attr_reader :size
+
+  attr_writer :name
+  attr_writer :price
+  attr_writer :size
+
   def initialize(input_name, input_price, input_size)
     @name = input_name
     @price = input_price
     @size = input_size
-  end
-
-  def name
-    @name
-  end
-
-  def price
-    @price
-  end
-
-  def size
-    @size
-  end
-
-  def price=(new_price)
-    @price = new_price
-  end
-
-  def size=(new_size)
-    @size = new_size
-  end
-
-  def name=(new_name)
-    @name = new_name
   end
 end
 
