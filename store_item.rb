@@ -12,7 +12,7 @@ bread = {:name => "Bread", :price => 4.00, :size => "large"}
 p "The cost of one #{pineapple[:size]} #{pineapple[:name]} is $#{pineapple[:price]}."
 
 
-class Store_items
+class StoreItem
   def initialize(input_name, input_price, input_size)
     @name = input_name
     @price = input_price
@@ -44,8 +44,8 @@ class Store_items
   end
 end
 
-store_item1 = Store_items.new("Apple", 2.25, "large")
-store_item2 = Store_items.new("Avocado", 4.50, "small")
+store_item1 = StoreItem.new("Apple", 2.25, "large")
+store_item2 = StoreItem.new("Avocado", 4.50, "small")
 
 puts store_item1.price
 puts store_item1.name
