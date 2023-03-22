@@ -18,6 +18,14 @@ class Store_items
     @price = input_price
     @size = input_size
   end
+
+  def name
+    @name
+  end
+
+  def price
+    @price
+  end
 end
 
 store_item1 = Store_items.new("Apple", 2.25, "large")
@@ -26,3 +34,5 @@ store_item2 = Store_items.new("Avocado", 4.50, "small")
 
 p store_item1
 p store_item2
+p store_item1.price
+p store_item2.name
