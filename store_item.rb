@@ -26,6 +26,14 @@ class Store_items
   def price
     @price
   end
+
+  def size
+    @size
+  end
+
+  def price=(new_price)
+    @price = new_price
+  end
 end
 
 store_item1 = Store_items.new("Apple", 2.25, "large")
@@ -34,5 +42,5 @@ store_item2 = Store_items.new("Avocado", 4.50, "small")
 
 p store_item1
 p store_item2
-p store_item1.price
+p store_item1.price = 3
 p store_item2.name
