@@ -34,13 +34,22 @@ class Store_items
   def price=(new_price)
     @price = new_price
   end
+
+  def size=(new_size)
+    @size = new_size
+  end
+
+  def name=(new_name)
+    @name = new_name
+  end
 end
 
 store_item1 = Store_items.new("Apple", 2.25, "large")
 store_item2 = Store_items.new("Avocado", 4.50, "small")
 
+puts store_item1.price
+puts store_item1.name
+puts store_item1.size
 
-p store_item1
-p store_item2
-p store_item1.price = 3
-p store_item2.name
+puts store_item2.price = 5.5
+puts store_item2.name = "Soup"
