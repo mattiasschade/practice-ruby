@@ -55,13 +55,8 @@ p "The cost of one #{pineapple[:size]} #{pineapple[:name]} is $#{pineapple[:pric
 # puts store_item2.name = "Soup"
 
 class StoreItem
-  attr_reader :name
-  attr_reader :price
-  attr_reader :size
-
-  attr_writer :name
-  attr_writer :price
-  attr_writer :size
+  attr_reader :name, :price, :size
+  attr_writer :name, :price, :size
 
   def initialize(input_name, input_price, input_size)
     @name = input_name
