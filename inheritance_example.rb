@@ -33,8 +33,8 @@ bike1 = Bike.new
 p bike1
 
 car1 = Car.new
-p car1.honk_horn
-p bike1.ring_bell
+car1.honk_horn
+bike1.ring_bell
 
 p car1.turn("left")
 p bike1.accelerate
