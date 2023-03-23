@@ -12,12 +12,28 @@
 #score variable that stores score
 #roll is variable that scores turns
 #23 times loop
+#write loop for each frame separately
+#frame length is 2 unless you are on frame 10
 
 score = 0
-roll = 5
+roll = 0
+frame_score = 0
+turn = 1
+frame_number = 1
 
-23.times do
-  score += roll
+if frame_number < 10
+  frame_length = 2
+else
+  frame_length = 3
 end
 
-p score
+p frame_length
+
+frame_length.times do
+  puts "please enter the number of pins you knocked down on turn #{turn}"
+  roll = gets.chomp.to_i
+  frame_score += roll
+  turn += 1
+end
+
+p frame_score
