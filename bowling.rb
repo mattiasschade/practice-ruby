@@ -15,25 +15,27 @@
 #write loop for each frame separately
 #frame length is 2 unless you are on frame 10
 
-score = 0
-roll = 0
-frame_score = 0
-turn = 1
-frame_number = 1
+# score = 0
+# roll = 0
+# frame_score = 0
+# turn = 1
+# frame_number = 1
 
-if frame_number < 10
-  frame_length = 2
-else
-  frame_length = 3
-end
+# if frame_number < 10
+#   frame_length = 2
+# else
+#   frame_length = 3
+# end
 
-p frame_length
+# p frame_length
 
-frame_length.times do
-  puts "please enter the number of pins you knocked down on turn #{turn}"
-  roll = gets.chomp.to_i
-  frame_score += roll
-  turn += 1
-end
+# 10.times do
+#     frame_length.times do
+#       puts "please enter the number of pins you knocked down on turn #{turn}"
+#       roll = gets.chomp.to_i
+#       frame_score += roll
+#       turn += 1
+#   end
+# end
 
-p frame_score
+# p frame_score
